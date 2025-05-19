@@ -17,3 +17,12 @@ def get_numbers():
             return num1, num2
         except ValueError:
             print("must be integer\n")
+
+def get_float():
+    """ Returns a float from user input. """
+    while True:
+        try:
+            num1 = float(input())
+            return num1
+        except ValueError:
+            print("must be a decimal number\n")
