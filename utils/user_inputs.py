@@ -25,3 +25,14 @@ def get_float():
             return num1
         except ValueError:
             print("must be a decimal number\n")
+
+def get_elements():
+    """ Returns a list of user inputs. x or X to finish. """
+    print("Elemente eingeben. X zum Beenden.")
+    elements =[]
+    while True:
+        element = input("Element: ")
+        if element in "xX":
+            break
+        elements.append(element)
+    return elements
