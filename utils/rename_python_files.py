@@ -1,7 +1,7 @@
 import os
 import re
 
-# Arbeitsverzeichnis (da, wo du es ausführst)
+# Arbeitsverzeichnis
 verzeichnis = "."
 
 for dateiname in os.listdir(verzeichnis):
