@@ -1,3 +1,4 @@
+
 def get_number():
     """ Returns a number from user input. """
     while True:
@@ -20,8 +21,9 @@ def get_numbers():
 def get_float():
     """ Returns a float from user input. """
     while True:
+        user_input = input("Eingabe: ")
         try:
-            num1 = float(input())
+            num1 = float(user_input)
             return num1
         except ValueError:
             print("must be a decimal number\n")
