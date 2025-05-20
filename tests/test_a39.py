@@ -1,7 +1,7 @@
 import unittest
 from aufgaben.a39_gespiegelte_zeichen_ausgabe import mirror_word
 
-class MirrorWord(unittest.TestCase):
+class TestMirrorWord(unittest.TestCase):
 
     def test_lower_case(self):
         self.assertEqual("z", mirror_word("a"))
