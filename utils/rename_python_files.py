@@ -1,8 +1,10 @@
 import os
 import re
-
+"""
+wandelt py files die mit einer Zahl anfangen um in "aZahl"
+"""
 # Arbeitsverzeichnis
-verzeichnis = "."
+verzeichnis = "../aufgaben"
 
 for dateiname in os.listdir(verzeichnis):
     if dateiname.endswith(".py") and re.match(r"^\d", dateiname):
