@@ -1,6 +1,6 @@
 
 # get user input
-def get_user_input():
+def _get_user_input():
     while True:
         try:
             user_input = int(input(f"Number: "))
@@ -22,7 +22,7 @@ def is_prime(n):
     return True
 
 
-number = get_user_input()
+number = _get_user_input()
 if is_prime(number):
     print("PRIME!\n")
 else:

@@ -1,5 +1,5 @@
 
-def get_number(n):
+def _get_number(n):
     while True:
         try:
             user_input = int(input(f"Number {n}: "))
@@ -7,9 +7,9 @@ def get_number(n):
         except ValueError:
             print("Must be integer!")
 
-x = get_number(1)
-y = get_number(2)
-z = get_number(3)
+x = _get_number(1)
+y = _get_number(2)
+z = _get_number(3)
 
 if x > y:
     x, y = y, x

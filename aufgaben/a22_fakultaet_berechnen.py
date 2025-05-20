@@ -1,5 +1,5 @@
 
-def get_user_input():
+def _get_user_input():
     while True:
         try:
             user_input = int(input(f"Number: "))
@@ -16,7 +16,7 @@ def factorial(n):
     else:
         return n * factorial(n-1)
 
-number = get_user_input()
+number = _get_user_input()
 f = factorial(number)
 print(f)
 

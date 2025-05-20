@@ -5,7 +5,7 @@
 ##############################################################
 
 
-def get_numbers():
+def _get_numbers():
     """returns two numbers from user input """
     num1 = int(input("a: "))
     num2 = int(input("b: "))
@@ -20,7 +20,7 @@ def is_prime(n):
             return False
     return True
 
-def get_primes_of_number(number):
+def _get_primes_of_number(number):
     """
     returns dictionary of primes and exponents
     For example: 90 returns {2: 1, 3: 2, 5: 1}
@@ -51,7 +51,7 @@ def compare_dicts(dict_1, dict_2):
                 new_dict[n] = dict_2[n]
     return new_dict
 
-def get_ggt(primes_of_a, primes_of_b):
+def _get_ggt(primes_of_a, primes_of_b):
     ggt_dict = compare_dicts(primes_of_a, primes_of_b)
     ggt = 1
     for key, value in ggt_dict.items():
@@ -60,10 +60,10 @@ def get_ggt(primes_of_a, primes_of_b):
 
 
 def main():
-    a, b = get_numbers()
-    primes_of_a = get_primes_of_number(a)
-    primes_of_b = get_primes_of_number(b)
-    ggt = get_ggt(primes_of_a, primes_of_b)
+    a, b = _get_numbers()
+    primes_of_a = _get_primes_of_number(a)
+    primes_of_b = _get_primes_of_number(b)
+    ggt = _get_ggt(primes_of_a, primes_of_b)
     kgv = a*b / ggt
     print(f"ggT: {ggt}")
     print(f"kgV: {kgv}")

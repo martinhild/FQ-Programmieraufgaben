@@ -21,7 +21,7 @@ def get_numbers():
 def get_float():
     """ Returns a float from user input. """
     while True:
-        user_input = input("Eingabe: ")
+        user_input = input()
         try:
             num1 = float(user_input)
             return num1
