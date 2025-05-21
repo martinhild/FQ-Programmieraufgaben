@@ -8,8 +8,8 @@ class TestMitternachtsformel(unittest.TestCase):
     def test_zwei_loesungen(self):
         self.assertAlmostEqual(calc_x1(-2, 5, 3), -0.5)
         self.assertAlmostEqual(calc_x2(-2, 5, 3), 3.0)
-        self.assertAlmostEqual(calc_x1(3, -14, 8), 4.5808, places=4)
-        self.assertAlmostEqual(calc_x2(3, -14, 8), 0.5858, places=4)
+        self.assertAlmostEqual(calc_x1(3, -14, 8), 4, places=4)
+        self.assertAlmostEqual(calc_x2(3, -14, 8), 0.66666667, places=4)
 
     def test_eine_loesung(self):
         self.assertEqual(calc_x1(1, 2, 1), -1.0)

@@ -39,6 +39,6 @@ def main():
     x1 = calc_x1(a,b,c)
     x2 = calc_x2(a,b,c)
     print(f"x1={x1},\nx2={x2}")
-
+    print(calc_x1(3, -14, 8))
 if __name__=="__main__":
     main()

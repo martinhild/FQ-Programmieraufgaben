@@ -1,30 +1,36 @@
+"""
+my helper functions for user input
+"""
 
-def get_number():
+def prompt(msg):
+    """just print() without line break"""
+    print(msg, end="")
+
+def get_number(prompt_text):
     """ Returns a number from user input. """
     while True:
         try:
-            num1 = int(input())
-            return num1
+            return int(input(prompt_text))
+
         except ValueError:
             print("must be integer\n")
 
-def get_numbers():
+def get_numbers(text1, text2):
     """ Returns two numbers from user input. """
     while True:
         try:
-            num1 = int(input("Number 1: "))
-            num2 = int(input("Number 2: "))
+            num1 = int(input(text1))
+            num2 = int(input(text2))
             return num1, num2
         except ValueError:
             print("must be integer\n")
 
-def get_float():
+def get_float(prompt_text):
     """ Returns a float from user input. """
     while True:
-        user_input = input()
+        user_input = input(prompt_text)
         try:
-            num1 = float(user_input)
-            return num1
+            return float(user_input)
         except ValueError:
             print("must be a decimal number\n")
 
