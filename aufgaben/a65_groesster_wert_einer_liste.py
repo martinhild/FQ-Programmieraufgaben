@@ -12,9 +12,11 @@ for i in range(1, n + 1):
 
 max_value = (max(numbers.values()))
 
-"""???"""
+""" ??? """
 key_of_max_value = next(k for k, v in numbers.items() if v == max_value)
-"""???"""
+""" Generator-Ausdruck """
+""" next() benötigt iterator-objekt (Objekt mit __iter()__ Methode """
+""" """
 
 print(f"Größter Wert ist die Nummer {key_of_max_value}: {max_value}")
 
