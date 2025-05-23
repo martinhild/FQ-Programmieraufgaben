@@ -1,6 +1,9 @@
 """
-my helper functions for user input
+My helper functions for user input
 """
+
+import os
+
 
 def prompt(msg):
     """just print() without line break"""
@@ -44,3 +47,11 @@ def get_elements():
             break
         elements.append(element)
     return elements
+
+# requires import os
+def get_path():
+    while True:
+        path_input = input("\nSet Path: ")
+        if os.path.isdir(path_input):
+            path = os.path.abspath(path_input)
+            return path
