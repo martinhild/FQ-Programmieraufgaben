@@ -6,4 +6,4 @@ aus
 import random
 
 w = random.randint(1,6)
-print(f"Würfeöwurf: {w}")
+print(f"Würfelwurf: {w}")

@@ -2,6 +2,8 @@
 Rekursive Funktionen
 a. Implementiere eine rekursive Funktion, die z. B. die Tiefe eines
 Verzeichnisbaums ausgibt (oder simpler: die Summe von 1 bis n).
+
+a) Die Summe von 1 bis n
 """
 # a) Summe von 1 bis n:
 
