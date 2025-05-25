@@ -1,5 +1,5 @@
 import unittest
-from aufgaben.a39_gespiegelte_zeichen_ausgabe import mirror_word
+from aufgaben.a_039_gespiegelte_zeichen_ausgabe import mirror_word
 
 class TestMirrorWord(unittest.TestCase):
 

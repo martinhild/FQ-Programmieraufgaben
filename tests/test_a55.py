@@ -1,5 +1,5 @@
 import unittest
-from aufgaben.a55_mitternachtsformel import calc_x1, calc_x2
+from aufgaben.a_055_mitternachtsformel import calc_x1, calc_x2
 
 
 

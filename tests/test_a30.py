@@ -1,5 +1,5 @@
 import unittest
-from aufgaben.a30_isbn_pruefung import _check_isbn
+from aufgaben.a_030_isbn_pruefung import _check_isbn
 
 class TestCheckISBN(unittest.TestCase):
     def test_check_isbn(self):

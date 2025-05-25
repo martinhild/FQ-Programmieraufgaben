@@ -1,5 +1,5 @@
 import unittest
-from aufgaben.a31_waehrungsumrechner import euro_to_usd
+from aufgaben.a_031_waehrungsumrechner import euro_to_usd
 
 
 class TestEuroToUSD(unittest.TestCase):

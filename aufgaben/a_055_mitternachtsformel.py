@@ -8,8 +8,8 @@ x = (-b +- sqrt(b²-4ac))/2a
 
 """
 import math
-
 from utils.user_inputs import get_float
+
 
 def _get_abc():
     print("a: ", end="")

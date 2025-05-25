@@ -5,7 +5,6 @@ b. Gib das Ergebnis z. B. mit drei Nachkommastellen aus.
 """
 from utils.user_inputs import get_number
 
-print("MB:",end="")
-kb = get_number()
+kb = get_number("MB: ")
 mb = 1024 * kb
 print(f"{mb:.3f} KB")

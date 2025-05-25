@@ -1,6 +1,6 @@
 import unittest
 
-from aufgaben.a66_umwandlung_sekunden import calc
+from aufgaben.a_066_umwandlung_sekunden import calc
 
 class TestCalc(unittest.TestCase):
     def test_testTrue(self):
