@@ -1,0 +1,2 @@
+Befehl für flake8 (PEP 8):
+python -m flake8 dateiname.py

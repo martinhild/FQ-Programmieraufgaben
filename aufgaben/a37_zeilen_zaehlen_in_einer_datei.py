@@ -1,4 +1,4 @@
-with open("../data/Textdokument.txt","r") as file:
+with open("../data/encryption/caesar_chiffre.txt", "r") as file:
     n = 0
     for line in file:
         n += 1

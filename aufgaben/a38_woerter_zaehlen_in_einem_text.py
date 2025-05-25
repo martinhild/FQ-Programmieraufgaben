@@ -11,7 +11,7 @@ def _count_words(text):
     words = text.split()
     return len(words)
 
-with open("../data/Textdokument.txt","r") as file:
+with open("../data/encryption/caesar_chiffre.txt", "r") as file:
     count = 0
     for line in file:
         line = _clean_line(line)
