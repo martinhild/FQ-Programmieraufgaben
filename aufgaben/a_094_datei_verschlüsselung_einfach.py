@@ -5,8 +5,7 @@ a. Lies den Inhalt einer Datei aus, verschlüssele ihn einfach
 """
 
 PATH = "../data/encryption/caesar_chiffre.txt"
-KEY = -4
-
+KEY = 1
 
 def print_file(path):
     """Ausgabe des Inhalts der Datei zeilenweise."""
@@ -56,6 +55,7 @@ def encrypt():
 
 def main():
     print_file(PATH)
+    print("")
     encrypt()
     print_file(PATH)
 
