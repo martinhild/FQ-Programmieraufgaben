@@ -15,26 +15,30 @@ def new_contact():
     Fragt nach Name und Telefonnummer und fügt einen
     neuen Kontakt zum Telefonbuch hinzu.
     """
-    name = input("Name: ")
+    name = input("Wen hinzufügen: ")
     number = input("Telefonnummer: ")
     PHONEBOOK.add_contact(name, number)
-    print(f"Hinzugefügt: {name} - {number}")
+    print(f"Hinzugefügt: {name} - {number}\n")
 
 def search_contact():
     """
     Fragt nach Name und Telefonnummer und listet passende Kontakte auf.
     """
-    name = input("Name: ")
+    name = input("Wen suchen: ")
     print(f"Suchergebnisse für {name}:")
+    print("")
     print(PHONEBOOK.search_by_name(name))
+    print("")
 
 def delete_contact():
     """
     Fragt nach einem Namen und entfernt den  Kontakt nach Bestätigung.
     """
-    name = input("Name:")
-    PHONEBOOK.remove_contact(name)
-    print(f"{name} wurde gelöscht.")
+    name = input("Wen löschen:")
+    if PHONEBOOK.remove_contact(name):
+        print(f"{name} wurde gelöscht.\n")
+    else:
+        print(f"{name} nicht gefunden.\n")
 
 def print_phonebook():
     """
@@ -65,6 +69,7 @@ def main():
     while True:
         print_menu()
         user_input = input("Eingabe: ")
+        print("")
 
         match user_input:
             case "1":

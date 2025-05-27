@@ -38,6 +38,8 @@ class Contacts:
             if name == contact.name:
                 if input(f"Remove {contact}? (y/n) ") == "y":
                     self.contacts.remove(contact)
+                    return True
+        return False
 
     def search_by_name(self, name: str):
         result = []
