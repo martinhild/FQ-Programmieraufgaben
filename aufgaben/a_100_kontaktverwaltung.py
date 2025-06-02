@@ -62,10 +62,17 @@ def print_menu():
     print("--------------------------------------------")
 
 
+
+
 def main():
     """
     Steuert die Benutzereingabe und ruft Funktionen auf.
     """
+
+    PHONEBOOK.add_contact("Joachim Schiller", "01472 548545")
+    PHONEBOOK.add_contact("Beathe Kramp", "01431 245315")
+    PHONEBOOK.add_contact("Rudi Knaller", "02433 12251")
+
     while True:
         print_menu()
         user_input = input("Eingabe: ")

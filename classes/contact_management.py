@@ -54,3 +54,4 @@ class Contacts:
         if not self.contacts:
             return "Keine Kontakte vorhanden."
         return "\n".join(str(contact) for contact in self.contacts)
+
